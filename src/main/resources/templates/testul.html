@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Eu sunt un test</h1>
+<h1 th:text="${a.getName()}"></h1>
+<h1 th:text="${a.getAge()}"></h1>
+<button id="button">Click me to javaScript</button>
+<p id="yep" class="first">Your mind will be blown</p>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

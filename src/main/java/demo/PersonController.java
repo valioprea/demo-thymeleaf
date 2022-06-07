@@ -17,6 +17,13 @@ public class PersonController {
                 new Person("Sarah", 22),
                 new Person("Simon", 23)
         ));
+        System.out.println(model);
         return "people";
+    }
+
+    @GetMapping("/test")
+    String getPerson(Model model) {
+        model.addAttribute("a", new Person("Mike",35));
+        return "testul";
     }
 }
